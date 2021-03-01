@@ -1,0 +1,13 @@
+.column:not(:last-child) {
+  @apply pb-6 xl:pb-0  mb-6 xl:mb-0 border-b xl:border-b-0 border-solid border-gray-250;
+}
+
+.socialLinks:not(:last-child) {
+  @apply mr-6;
+}
+
+.linkText {
+  @apply border-0 overflow-hidden w-px h-px p-0 absolute whitespace-nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
