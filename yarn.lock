@@ -135,6 +135,11 @@
     "@types/prop-types" "*"
     csstype "^3.0.2"
 
+"@types/slug@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@types/slug/-/slug-0.9.1.tgz#16dbf8b77d73e0a09ce51a96400878f33806ab32"
+  integrity sha512-zR/u8WFQ4/6uCIikjI00a5uB084XjgEGNRAvM4a1BL39Bw9yEiDQFiPS2DgJ8lPDkR2Qd/vZ26dCR9XqlKbDqQ==
+
 acorn-node@^1.6.1:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/acorn-node/-/acorn-node-1.8.2.tgz#114c95d64539e53dede23de8b9d96df7c7ae2af8"
@@ -1990,6 +1995,11 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+slug@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/slug/-/slug-4.0.3.tgz#0145b947b3491c4aa4a618dfcf7defdd27690347"
+  integrity sha512-CnR9sYvJn6JW8hDzxRVg8imqzaJrCuUMc8poiFmd3tqWQXxeEQdwsBbBidSdl+Q3obwxQ4hrx7kxcUH9oCE9yw==
 
 source-map@0.7.3:
   version "0.7.3"

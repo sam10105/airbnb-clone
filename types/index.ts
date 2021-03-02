@@ -1,5 +1,5 @@
 export interface Location {
   city: string;
   state: string;
-  url: string;
+  url?: string;
 }

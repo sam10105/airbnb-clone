@@ -1,5 +1,6 @@
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Link from 'next/link';
+import slug from 'slug';
 
 import { Footer } from '@components/common';
 import { Tabs, Tab, TabList, TabPanel } from '@components/ui';
@@ -11,11 +12,20 @@ type Props = {
   locations: Location[];
 };
 
-export const getStaticProps: GetStaticProps<Props> = async (context) => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const data = await getAwayDestinations();
 
+  const generateUrl = ({ city, state }: Location) => ({
+    city,
+    state,
+    url: slug(`${city} ${state}`),
+  });
+
   const titles = data.map((destination) => destination.name);
-  const locations = data.map((destination) => destination.locations).flat();
+  const locations = data
+    .map((destination) => destination.locations)
+    .flat()
+    .map(generateUrl);
 
   return {
     props: { titles, locations },
@@ -37,7 +47,7 @@ function Home({
             ))}
           </TabList>
           <TabPanel>
-            {locations.map(({ city, state, url }) => (
+            {locations.map(({ city, state, url = '' }) => (
               <div
                 key={url}
                 className="relative w-full sm:w-1/2 md:w-1/3 xl:w-1/4 mx-0 px-1 md:px-2"
