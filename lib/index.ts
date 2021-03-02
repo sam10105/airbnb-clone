@@ -1,10 +1,20 @@
-import { Destination } from '@types';
+const data = [
+  {
+    name: 'Destinations for arts & culture',
+    locations: [
+      {
+        city: 'New York',
+        state: 'New York',
+        url: '/new-york-ny/stays',
+      },
+      {
+        city: 'Phoenix',
+        state: 'Arizona',
+        url: '/phoenix-az/stays',
+      },
+    ],
+  },
+];
 
-const { BASE_URL = 'http://localhost:3000' } = process.env;
-
-export const getAwayDestinations = async () => {
-  const res = await fetch(`${BASE_URL}/api/locations`);
-  const data: Destination[] = await res.json();
-
-  return data;
-};
+// This could be data from an api
+export const getAwayDestinations = async () => data;

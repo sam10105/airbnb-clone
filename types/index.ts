@@ -3,8 +3,3 @@ export interface Location {
   state: string;
   url: string;
 }
-
-export interface Destination {
-  name: string;
-  locations: Location[];
-}
