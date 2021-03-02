@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className=" border-t border-solid border-gray-250 bg-gray-75">
       <div className="px-6 md:px-10 xl:px-20 m-auto max-w-screen-2xl">
-        <div className="py-8 md:py-10 md:flex md:flex-col xl:flex-row">
+        <div className="py-8 md:py-10 md:flex md:flex-col xl:flex-row xl:-mx-3">
           <section className={`${styles.column} xl:px-3 xl:flex-1`}>
             <h4 className="text-gray-750 font-bold uppercase text-xs mb-0">
               About
