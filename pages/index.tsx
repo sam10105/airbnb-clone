@@ -6,6 +6,7 @@ import { Footer } from '@components/common';
 import { Tabs, Tab, TabList, TabPanel } from '@components/ui';
 import { getAwayDestinations } from '@lib';
 import { Location } from '@types';
+import styles from '@styles/Home.module.css';
 
 type Props = {
   titles: string[];
@@ -37,9 +38,23 @@ function Home({
   locations,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div>
+    <>
+      <aside className="px-6 lg:px-10 xl:px-20 py-4 md:py-5 relative text-center text-sm leading-tight bg-gray-750 text-gray-350">
+        <Link href="/covid-traveler">
+          <a className={styles.link}>
+            <span className="whitespace-normal">
+              Get the latest on our COVID-19 response
+            </span>
+          </a>
+        </Link>
+      </aside>
       <h1 className="text-xl h-screen">Airbnb Clone</h1>
       <section className="mx-auto max-w-screen-2xl mb-10 mt-0 px-6 md:px-10 xl:px-20">
+        <div className="flex flex-col pb-4">
+          <h1 className="whitespace-pre-line text-gray-750 text-xl md:text-2xl lg:text-3xl font-bold leading-none md:leading-tight tracking-tight md:tracking-normal">
+            Inspiration for future&nbsp;getaways
+          </h1>
+        </div>
         <Tabs>
           <TabList>
             {titles.map((title) => (
@@ -73,7 +88,7 @@ function Home({
         </Tabs>
       </section>
       <Footer />
-    </div>
+    </>
   );
 }
 

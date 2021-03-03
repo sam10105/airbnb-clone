@@ -10,7 +10,7 @@
 }
 
 .tab {
-  @apply text-sm leading-tight font-semibold rounded-lg border-none bg-transparent hover:bg-gray-75 text-gray-450 p-2.5 mt-1.5 mb-1.5 mr-1.5 relative outline-none cursor-pointer;
+  @apply text-sm leading-tight font-semibold rounded-lg border-none bg-transparent hover:bg-gray-75 text-gray-450 p-2.5 mt-1.5 mb-1.5 mr-1.5 relative outline-none cursor-pointer motion-reduce:transition-none;
   transition: box-shadow 0.2s ease 0s, transform 0.1s ease 0s;
 }
 
@@ -19,14 +19,13 @@
 }
 
 .tab:focus-visible {
-  @apply border-none bg-gray-75 text-gray-750;
+  @apply border-none bg-gray-75 text-gray-750 motion-reduce:transition-none;
   transition: box-shadow 0.2s ease 0s;
-  box-shadow: rgb(34, 34, 34) 0px 0px 0px 2px,
-    rgba(255, 255, 255, 0.8) 0px 0px 0px 4px;
+  box-shadow: 0px 0px 0px 2px #222, rgba(255, 255, 255, 0.8) 0px 0px 0px 4px;
 }
 
 .selected {
-  @apply p-2.5 -ml-2.5 text-gray-750 cursor-default;
+  @apply p-2.5 -ml-2.5 text-gray-750 cursor-default motion-reduce:transition-none;
   transition: box-shadow 0.2s ease 0s, transform 0.1s ease 0s;
 }
 

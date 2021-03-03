@@ -19,6 +19,7 @@ module.exports = {
         gray: {
           75: '#f7f7f7',
           250: '#ddd',
+          350: '#a3a3a3',
           450: '#717171',
           750: '#222',
         },
@@ -26,6 +27,7 @@ module.exports = {
     },
   },
   variants: {
+    transitionProperty: ['motion-reduce'],
     extend: {},
   },
   plugins: [],
