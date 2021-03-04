@@ -5,6 +5,7 @@ import slug from 'slug';
 
 import { Footer } from '@components/common';
 import { Tabs, Tab, TabList, TabPanel } from '@components/ui';
+import { useWindowSize } from '@hooks';
 import { getAwayDestinations } from '@lib';
 import { Location } from '@types';
 import styles from '@styles/Home.module.css';
@@ -38,6 +39,8 @@ function Home({
   titles,
   locations,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const { width } = useWindowSize();
+
   return (
     <>
       <aside className="px-6 lg:px-10 xl:px-20 py-4 md:py-5 relative text-center text-sm leading-tight bg-gray-750 text-gray-350">
@@ -57,7 +60,7 @@ function Home({
           <div className="md:hidden" style={{ paddingTop: '125%' }} />
           <div className="absolute -inset-y-px inset-x-0">
             <Image
-              src="/image.webp"
+              src={width >= 744 ? '/image.webp' : '/image-small.jpg'}
               alt="Your world is worth sharing"
               layout="fill"
               objectFit="cover"
