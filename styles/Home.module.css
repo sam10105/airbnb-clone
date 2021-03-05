@@ -13,6 +13,15 @@
   box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #222;
 }
 
+/* Live Anywhere */
+.cardTitle {
+  @apply text-lg truncate whitespace-pre-line text-gray-750 font-semibold;
+  line-height: 22px;
+  max-height: 44px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 /* Become a Host */
 .imageContainer {
   @apply bg-gray-650 border-none block overflow-hidden relative text-left no-underline w-full h-auto rounded-2xl;

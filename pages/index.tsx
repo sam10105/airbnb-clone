@@ -4,7 +4,7 @@ import Link from 'next/link';
 import slug from 'slug';
 
 import { Footer } from '@components/common';
-import { Tabs, Tab, TabList, TabPanel } from '@components/ui';
+import { Slider, Tabs, Tab, TabList, TabPanel } from '@components/ui';
 import { useWindowSize } from '@hooks';
 import { getAwayDestinations } from '@lib';
 import { Location } from '@types';
@@ -54,6 +54,67 @@ function Home({
       </aside>
 
       <h1 className="text-xl h-screen">Airbnb Clone</h1>
+
+      <div className="mx-auto max-w-screen-2xl mb-10 mt-0 px-6 md:px-10 xl:px-20">
+        <Slider>
+          <a href="/s/homes">
+            <div className="bg-gray-250 overflow-hidden relative rounded-lg">
+              <div style={{ paddingTop: '100%' }}>
+                <Image src="/house-1.webp" layout="fill" objectFit="cover" />
+              </div>
+            </div>
+            <div className="pt-2">
+              <div className="whitespace-normal">
+                <div className={styles.cardTitle} title="Entire homes">
+                  <span className="text-gray-750">Entire homes</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/s/homes">
+            <div className="bg-gray-250 overflow-hidden relative rounded-lg">
+              <div style={{ paddingTop: '100%' }}>
+                <Image src="/house-2.webp" layout="fill" objectFit="cover" />
+              </div>
+            </div>
+            <div className="pt-2">
+              <div className="whitespace-normal">
+                <div className={styles.cardTitle} title="Unique stays">
+                  <span className="text-gray-750">Unique stays</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/s/homes">
+            <div className="bg-gray-250 overflow-hidden relative rounded-lg">
+              <div style={{ paddingTop: '100%' }}>
+                <Image src="/house-3.webp" layout="fill" objectFit="cover" />
+              </div>
+            </div>
+            <div className="pt-2">
+              <div className="whitespace-normal">
+                <div className={styles.cardTitle} title="Cabins and cottages">
+                  <span className="text-gray-750">Cabins and cottages</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/s/homes">
+            <div className="bg-gray-250 overflow-hidden relative rounded-lg">
+              <div style={{ paddingTop: '100%' }}>
+                <Image src="/dog.webp" layout="fill" objectFit="cover" />
+              </div>
+            </div>
+            <div className="pt-2">
+              <div className="whitespace-normal">
+                <div className={styles.cardTitle} title="Pets allowed">
+                  <span className="text-gray-750">Pets allowed</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </Slider>
+      </div>
 
       <section className="mx-auto max-w-screen-2xl mb-10 mt-0 px-6 md:px-10 xl:px-20">
         <div className={styles.imageContainer}>
