@@ -1,0 +1,9 @@
+.button {
+  @apply inline-block w-8 h-8 cursor-pointer text-center leading-none relative rounded-full border-2 border-solid border-transparent bg-white;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 1px 1px;
+}
+
+.icon {
+  @apply inline-block absolute top-1/2 left-1/2 text-gray-650 text-base;
+  transform: translate(-50%, -50%);
+}
