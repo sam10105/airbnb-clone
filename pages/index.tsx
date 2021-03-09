@@ -55,7 +55,7 @@ function Home({
 
       <h1 className="text-xl h-screen">Airbnb Clone</h1>
 
-      <div className="mx-auto max-w-screen-2xl mb-10 mt-0 px-6 md:px-10 xl:px-20">
+      <section className="mx-auto max-w-screen-2xl mb-10 mt-0 px-6 md:px-10 xl:px-20">
         <Slider>
           <a href="/s/homes">
             <div className="bg-gray-250 overflow-hidden relative rounded-lg">
@@ -114,7 +114,7 @@ function Home({
             </div>
           </a>
         </Slider>
-      </div>
+      </section>
 
       <section className="mx-auto max-w-screen-2xl mb-10 mt-0 px-6 md:px-10 xl:px-20">
         <div className={styles.imageContainer}>
@@ -143,6 +143,153 @@ function Home({
               >
                 Become a Host
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-16 md:mb-6 max-w-screen-2xl m-auto px-6 md:px-10 xl:px-20">
+        <div className="bg-white overflow-auto">
+          <div>
+            <div className="my-8 md:my-10">
+              <div>
+                <section>
+                  <div className="hidden md:block">
+                    <div className="lg:hidden">
+                      <div className="flex flex-col pb-2">
+                        <h1 className="text-3xl text-gray-750 font-bold">
+                          <span>Experience the&nbsp;world</span>
+                        </h1>
+                        <span className="truncate whitespace-pre-line bg-clip-text text-2xl text-gray-750 font-normal">
+                          Unique activities with local experts—in person
+                          or&nbsp;online.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="hidden lg:block">
+                    <div className="flex flex-col pb-2">
+                      <h1 className="text-3xl text-gray-750 font-bold">
+                        <span>Experience the&nbsp;world</span>
+                      </h1>
+                      <span className="truncate whitespace-pre-line bg-clip-text text-2xl text-gray-750 font-normal">
+                        Unique activities with local experts—in person
+                        or&nbsp;online.
+                      </span>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div>
+                <div className="my-2">
+                  <div className="relative z-0">
+                    <Slider>
+                      <a href="/s/experiences/online">
+                        <div className="rounded-tl-2xl rounded-tr-2xl h-full md:w-full bg-white">
+                          <div className="bg-gray-250 overflow-hidden relative rounded-lg">
+                            <div
+                              style={{
+                                paddingTop: '100%',
+                              }}
+                            >
+                              <Image src="/image-2.webp" layout="fill" />
+                            </div>
+                          </div>
+                          <div className="pt-2">
+                            <div className="whitespace-normal">
+                              <div
+                                className="text-lg leading-tight max-h-11 truncate whitespace-pre-line text-gray-750 font-semibold"
+                                title="Online Experiences"
+                              >
+                                <span className="text-gray-750">
+                                  Online Experiences
+                                </span>
+                              </div>
+                              <div
+                                className="text-sm leading-tight max-h-14 truncate whitespace-pre-line text-gray-450 font-normal mt-1"
+                                title="Travel the world without leaving home."
+                              >
+                                <span className="text-gray-750">
+                                  Travel the world without leaving&nbsp;home.
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a
+                        target="_blank"
+                        href="/s/experiences?location_search=NEARBY"
+                      >
+                        <div className="rounded-tl-2xl rounded-tr-2xl h-full md:w-full bg-white">
+                          <div className="bg-gray-250 overflow-hidden relative rounded-lg">
+                            <div
+                              style={{
+                                paddingTop: '100%',
+                              }}
+                            >
+                              <Image src="/image-3.webp" layout="fill" />
+                            </div>
+                          </div>
+                          <div className="pt-2">
+                            <div className="whitespace-normal">
+                              <div
+                                className="text-lg leading-tight max-h-11 truncate whitespace-pre-line text-gray-750 font-semibold"
+                                title="Experiences"
+                              >
+                                <span className="text-gray-750">
+                                  Experiences
+                                </span>
+                              </div>
+                              <div
+                                className="text-sm leading-tight max-h-14 truncate whitespace-pre-line text-gray-450 font-normal mt-1"
+                                title="Things to do wherever you are."
+                              >
+                                <span className="text-gray-750">
+                                  Things to do wherever you&nbsp;are.
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="/s/adventures">
+                        <div className="rounded-tl-2xl rounded-tr-2xl h-full md:w-full bg-white">
+                          <div className="bg-gray-250 overflow-hidden relative rounded-lg">
+                            <div
+                              style={{
+                                paddingTop: '100%',
+                              }}
+                            >
+                              <Image src="/image-4.jpg" layout="fill" />
+                            </div>
+                          </div>
+                          <div className="pt-2">
+                            <div className="whitespace-normal">
+                              <div
+                                className="text-lg leading-tight max-h-11 truncate whitespace-pre-line text-gray-750 font-semibold"
+                                title="Adventures"
+                              >
+                                <span className="text-gray-750">
+                                  Adventures
+                                </span>
+                              </div>
+                              <div
+                                className="text-sm leading-tight max-h-14 truncate whitespace-pre-line text-gray-450 font-normal mt-1"
+                                title="Multi-day trips with meals and stays."
+                              >
+                                <span className="text-gray-750">
+                                  Multi-day trips with meals and&nbsp;stays.
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </Slider>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
