@@ -13,6 +13,70 @@
   box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #222;
 }
 
+/* Explore Nearby */
+.gridContainer {
+  @apply overflow-x-auto grid gap-3 grid-flow-col;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns:
+    repeat(3, calc(100% - 108px))
+    100%;
+  scroll-snap-type: x mandatory;
+}
+
+@media (min-width: 744px) {
+  .gridContainer {
+    @apply pl-0 gap-4;
+    scroll-padding: 0px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1128px) {
+  .gridContainer {
+    @apply grid-flow-row;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.gridItem {
+  @apply overflow-hidden h-full;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 744px) {
+  .gridItem:nth-last-child(-n + 2) {
+    @apply hidden;
+  }
+}
+
+@media (min-width: 1128px) {
+  .gridItem:nth-last-child(-n + 2) {
+    @apply block;
+  }
+}
+
+.image {
+  @apply relative bg-gray-250 overflow-hidden rounded-xl mr-3 md:mr-4;
+  flex: 0 0 72px;
+  height: 72px;
+}
+
+@media (min-width: 1128px) {
+  .image {
+    @apply h-16 rounded-lg;
+    flex: 0 0 64px;
+  }
+}
+
+.gridText {
+  @apply truncate pb-0.5;
+  flex: 0 1 100%;
+}
+
+.gridText:nth-child(n) > b {
+  @apply font-semibold;
+}
+
 /* Live Anywhere */
 .cardTitle {
   @apply text-lg truncate whitespace-pre-line text-gray-750 font-semibold;

@@ -55,7 +55,172 @@ function Home({
 
       <h1 className="text-xl h-screen">Airbnb Clone</h1>
 
-      <section className="mx-auto max-w-screen-2xl mb-10 mt-0 px-6 md:px-10 xl:px-20">
+      <section className="mx-auto max-w-screen-2xl mb-10 mt-0 p-6 md:px-10 xl:px-20">
+        <div className={styles.gridContainer}>
+          <div className={styles.gridItem}>
+            <a
+              className="text-base leading-tight text-gray-750 flex items-center"
+              href="/s/Nairobi/homes"
+            >
+              <span className={styles.image}>
+                <Image
+                  className="absolute w-full h-full object-cover align-bottom"
+                  src="/grid-1.webp"
+                  layout="fill"
+                />
+              </span>
+              <span className="flex-grow flex flex-wrap overflow-x-hidden">
+                <span className={styles.gridText}>
+                  <b>Nairobi</b>
+                </span>
+                <span className={styles.gridText}>15 minute drive</span>
+              </span>
+            </a>
+          </div>
+          <div className={styles.gridItem}>
+            <a
+              className="text-base leading-tight text-gray-750 flex items-center"
+              href="/s/Mombasa/homes"
+            >
+              <span className={styles.image}>
+                <Image
+                  className="absolute w-full h-full object-cover align-bottom"
+                  src="/grid-2.webp"
+                  layout="fill"
+                />
+              </span>
+              <span className="flex-grow flex flex-wrap overflow-x-hidden">
+                <span className={styles.gridText}>
+                  <b>Mombasa</b>
+                </span>
+                <span className={styles.gridText}>7 hour drive</span>
+              </span>
+            </a>
+          </div>
+          <div className={styles.gridItem}>
+            <a
+              className="text-base leading-tight text-gray-750 flex items-center"
+              href="/s/Diani-Beach/homes"
+            >
+              <span className={styles.image}>
+                <Image
+                  className="absolute w-full h-full object-cover align-bottom"
+                  src="/grid-3.webp"
+                  layout="fill"
+                />
+              </span>
+              <span className="flex-grow flex flex-wrap overflow-x-hidden">
+                <span className={styles.gridText}>
+                  <b>Diani Beach</b>
+                </span>
+                <span className={styles.gridText}>7 hour drive</span>
+              </span>
+            </a>
+          </div>
+          <div className={styles.gridItem}>
+            <a
+              className="text-base leading-tight text-gray-750 flex items-center"
+              href="/s/Watamu/homes"
+            >
+              <span className={styles.image}>
+                <Image
+                  className="absolute w-full h-full object-cover align-bottom"
+                  src="/grid-4.webp"
+                  layout="fill"
+                />
+              </span>
+              <span className="flex-grow flex flex-wrap overflow-x-hidden">
+                <span className={styles.gridText}>
+                  <b>Watamu</b>
+                </span>
+                <span className={styles.gridText}>8.5 hour drive</span>
+              </span>
+            </a>
+          </div>
+          <div className={styles.gridItem}>
+            <a
+              className="text-base leading-tight text-gray-750 flex items-center"
+              href="/s/Nakuru/homes"
+            >
+              <span className={styles.image}>
+                <Image
+                  className="absolute w-full h-full object-cover align-bottom"
+                  src="/grid-5.webp"
+                  layout="fill"
+                />
+              </span>
+              <span className="flex-grow flex flex-wrap overflow-x-hidden">
+                <span className={styles.gridText}>
+                  <b>Nakuru</b>
+                </span>
+                <span className={styles.gridText}>3 hour drive</span>
+              </span>
+            </a>
+          </div>
+          <div className={styles.gridItem}>
+            <a
+              className="text-base leading-tight text-gray-750 flex items-center"
+              href="/s/Kisumu/homes"
+            >
+              <span className={styles.image}>
+                <Image
+                  className="absolute w-full h-full object-cover align-bottom"
+                  src="/grid-6.webp"
+                  layout="fill"
+                />
+              </span>
+              <span className="flex-grow flex flex-wrap overflow-x-hidden">
+                <span className={styles.gridText}>
+                  <b>Kisumu</b>
+                </span>
+                <span className={styles.gridText}>5.5 hour drive</span>
+              </span>
+            </a>
+          </div>
+          <div className={styles.gridItem}>
+            <a
+              className="text-base leading-tight text-gray-750 flex items-center"
+              href="/s/Malindi/homes"
+            >
+              <span className={styles.image}>
+                <Image
+                  className="absolute w-full h-full object-cover align-bottom"
+                  src="/grid-7.webp"
+                  layout="fill"
+                />
+              </span>
+              <span className="flex-grow flex flex-wrap overflow-x-hidden">
+                <span className={styles.gridText}>
+                  <b>Malindi</b>
+                </span>
+                <span className={styles.gridText}>8.5 hour drive</span>
+              </span>
+            </a>
+          </div>
+          <div className={styles.gridItem}>
+            <a
+              className="text-base leading-tight text-gray-750 flex items-center"
+              href="/s/Mtwapa/homes"
+            >
+              <span className={styles.image}>
+                <Image
+                  className="absolute w-full h-full object-cover align-bottom"
+                  src="/grid-8.webp"
+                  layout="fill"
+                />
+              </span>
+              <span className="flex-grow flex flex-wrap overflow-x-hidden">
+                <span className={styles.gridText}>
+                  <b>Mtwapa</b>
+                </span>
+                <span className={styles.gridText}>7 hour drive</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-screen-2xl mb-10 mt-0 p-6 md:px-10 xl:px-20">
         <Slider>
           <a href="/s/homes">
             <div className="bg-gray-250 overflow-hidden relative rounded-lg">
