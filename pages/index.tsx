@@ -56,6 +56,11 @@ function Home({
       <h1 className="text-xl h-screen">Airbnb Clone</h1>
 
       <section className="mx-auto max-w-screen-2xl mb-10 mt-0 p-6 md:px-10 xl:px-20">
+        <div className="flex flex-col pb-4">
+          <h1 className="whitespace-pre-line text-gray-750 text-xl md:text-2xl lg:text-3xl font-bold leading-none md:leading-tight tracking-tight md:tracking-normal">
+            Explore nearby
+          </h1>
+        </div>
         <div className={styles.gridContainer}>
           <div className={styles.gridItem}>
             <a
@@ -221,6 +226,12 @@ function Home({
       </section>
 
       <section className="mx-auto max-w-screen-2xl mb-10 mt-0 p-6 md:px-10 xl:px-20">
+        <div className="flex flex-col pb-4">
+          <h1 className="whitespace-pre-line text-gray-750 text-xl md:text-2xl lg:text-3xl font-bold leading-none md:leading-tight tracking-tight md:tracking-normal">
+            Live anywhere
+          </h1>
+        </div>
+
         <Slider>
           <a href="/s/homes">
             <div className="bg-gray-250 overflow-hidden relative rounded-lg">
