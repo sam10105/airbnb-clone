@@ -53,9 +53,26 @@ function Home({
         </Link>
       </aside>
 
-      <h1 className="text-xl h-screen">Airbnb Clone</h1>
+      <header className={styles.hero}>
+        <div className={styles.heroContainer}>
+          <div className="absolute inset-0 ml-10 md:m-0 xl:mx-8">
+            <Image
+              className="absolute align-bottom"
+              src="/hero.webp"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
+        </div>
+        <div role="heading" className={styles.heroHeading}>
+          <span className="whitespace-pre-line w-full text-3xl tracking-tight text-white">
+            Made possible by&nbsp;Hosts
+          </span>
+        </div>
+      </header>
 
-      <section className="mx-auto max-w-screen-2xl mb-10 mt-0 p-6 md:px-10 xl:px-20">
+      <section className="mx-auto max-w-screen-2xl mb-10 mt-14 p-6 md:px-10 xl:px-20">
         <div className="flex flex-col pb-4">
           <h1 className="whitespace-pre-line text-gray-750 text-xl md:text-2xl lg:text-3xl font-bold leading-none md:leading-tight tracking-tight md:tracking-normal">
             Explore nearby
